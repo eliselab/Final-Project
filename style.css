@@ -1,0 +1,288 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #5a5b5b;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #5a5b5b;
+    /* padding: 4px; */
+}
+
+
+
+/*HEADER AND BRAND*/
+/*******************************************************/
+
+header {
+    margin-bottom: 3em;
+    margin-top: 3em;
+} 
+
+.brand {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 4em;
+    color:  #5a5b5b; 
+}
+
+.s-brand {
+    color: rgb(84, 209, 194);   
+}
+
+/*Brand Animation*/
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .10em;
+    animation: 
+        typing 3s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+.typeborder {
+    border-right: .15em solid bisque;
+  }
+
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: bisque }
+  }
+
+
+/*MAIN CONTENT SECTION*/
+/******************************************/
+
+.section-home {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    margin: 1em;
+    flex-basis: 25%;
+}
+
+.home-profile-img {
+    width: 280px;
+    height: 260px;
+    image-resolution: 100%;
+    object-fit: cover;
+}
+
+
+.name-header {
+    font-size: 2em;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 0.8em;
+    align-items: center;
+    display: block;
+
+}
+
+.name-header {
+    background-image: linear-gradient(180deg,transparent 75%,bisque 0);   
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .4s ease;
+}
+
+.name-header:hover {
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/* Footer nav styling  */
+/******************************************/
+
+footer {
+    min-height: 10vh;
+    background-color: rgb(84, 209, 194);
+    color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.5em;
+}
+
+li .social {
+    padding: 0.8em;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.aboutnavlists {
+    margin-bottom: 0.8em;
+    margin-top: 0.4em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.socialnavlists {
+    margin-bottom: 1em;
+}
+
+a.social:link, a.social:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.about:link, a.about:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.contact:link, a.contact:visited {
+    text-decoration: none;
+    color: white;
+    /* padding: 4px; */
+}
+
+/* .dot {
+    color: white;
+    margin: 0 10px;
+    width: 3px;
+    height: 3px;
+    border-radius: 5px; */
+    /* background-color: #8a8a8a; */
+    /* display: inline-block;
+    vertical-align: middle;
+} */
+
+
+/* Article styling  */
+/******************************************/
+/* 
+.profile-page-header .brand {
+    display: flex;
+    align-items: flex-start;
+    font-size: 2em;
+    margin-left: 2em;
+} */
+
+.profile-img {
+    width: 500px;
+    height: 480px;
+    image-resolution: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    margin-left: 4em;
+    flex-grow: 1;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+}
+
+.blog-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-article {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+.intro-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 4em;
+}
+
+
+.blog-summary-section {
+    flex-grow: 3;
+    margin-right: 2em;
+}
+
+.profile-heading {
+    font-size: 1.8em;
+    margin: 2em;
+}
+
+.blog-summary {
+    margin: 2em;
+}
+
+.blog-content {
+    margin-left: 4em;
+    margin-right: 12em;
+    column-count: 2;
+    column-gap: 2em;
+    text-align: left;
+}
+
+.accent {
+    color: bisque;
+    font-weight: 800;
+}
+
+.blog-qoute {
+    font-weight: 800;
+    font: bold;
+    /* font-size: 1.2em; */
+}
+
+/* About & Contact Page styling  */
+/******************************************/
+
+.about-img {
+    height: 400px;
+    image-resolution: 100%;
+}
+
+.standout {
+    font-weight: 800;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px){
+    .brand  {
+        font-size: 3em;
+    }  
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .brand {
+        font-size: 2em;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+}
